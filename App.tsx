@@ -1,17 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
-import Stacks from "./src/navigations/Stacks";
-import Tabs from "./src/navigations/Tabs";
-import TodoStacks from "./src/navigations/todo/Stacks";
+import Todostack from "./src/navigations/Todostack";
+
 
 export default function App() {
   return (
     <NavigationContainer>
-       {false?<>
-        <Stacks />
-       </>:<>
-       <Tabs />
-       </>
-       }
+       <Todostack />
     </NavigationContainer>
   );
 }

@@ -1,11 +1,16 @@
 import { View, Text, Button,StyleSheet } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
+import { TodoScreenNavigationProps } from '../../types/navigationTypes';
 
-const TodoDetailsScreen = (props:any) => {
+const TodoDetailsScreen = () => {
+
+  const navigation=useNavigation<TodoScreenNavigationProps>();
+
   return (
     <View style={styles.app}  >
       <Text>TodoDetailsScreen</Text>
-      <Button title='View Details' onPress={()=>props.navigation.navigate("Todos")} />
+      <Button title='View Details' onPress={()=>{navigation.navigate("Todos");}} />
     </View>
   )
 }
