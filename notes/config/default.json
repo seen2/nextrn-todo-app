@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://sintu:sintu@mernshoping.rityr.mongodb.net/mern_shoping?retryWrites=true&w=majority",
+  "jwtSecret": "sl_myjwtSecret"
+}
